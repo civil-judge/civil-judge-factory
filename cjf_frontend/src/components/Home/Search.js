@@ -158,7 +158,7 @@ export const Search = () => {
                   </div>
                 );
               })
-            : courses.map((course, index) => {
+            : courses?.map((course, index) => {
                 return (
                   <div
                     className={classes.box}

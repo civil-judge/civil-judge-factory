@@ -42,8 +42,8 @@ export const StudyNotes = (props) => {
 
   const fetchActiveNotesCategory = async () => {
     let list = await getData("notes/fetchActiveNotesCategory");
-    if (list.success) {
-      setNotes(list.data);
+    if (list?.success) {
+      setNotes(list?.data);
     }
   };
 

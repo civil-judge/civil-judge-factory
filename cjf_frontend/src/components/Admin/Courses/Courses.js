@@ -39,7 +39,7 @@ export const Courses = (props) => {
 
   const fetchCourses = async () => {
     let result = await getData("courses/fetchCourses");
-    setCourseList(result.list);
+    setCourseList(result?.list);
     // setColumns(result.data.columns);
     // let changedCols = [];
     // result.columns.forEach((col) => {

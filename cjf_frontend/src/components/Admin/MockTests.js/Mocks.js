@@ -35,7 +35,7 @@ export const MocksCategory = (props) => {
 
   const fetchMocksCategory = async () => {
     let result = await getData("mocks/fetchAllMocksCategory");
-    setMocksData(result.data);
+    setMocksData(result?.data);
   };
 
   useEffect(() => {

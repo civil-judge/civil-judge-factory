@@ -96,7 +96,7 @@ export const MocksCategory = (props) => {
         </Grid>
         <Container>
           <Grid container spacing={6}>
-            {mocksData.map((item, index) => {
+            {mocksData?.map((item, index) => {
               return (
                 <Grid item xs={6} sm={4} md={3} key={index}>
                   <div
