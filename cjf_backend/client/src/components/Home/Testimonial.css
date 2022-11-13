@@ -1,0 +1,11 @@
+.testimonial .slick-prev::before,
+.testimonial .slick-next::before {
+  display: none;
+}
+
+.testimonial .slick-dots li button:before {
+  font-size: 15px;
+}
+.testimonial .slick-dots li {
+  display: none;
+}

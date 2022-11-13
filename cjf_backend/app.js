@@ -16,7 +16,7 @@ app.use(logger('dev'));
 app.use(express.json({limit: '500mb'}));
 app.use(express.urlencoded({ extended: false,limit: '500mb' }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/client/build')));
 
 app.use('/', require('./routes/index'));
 app.use('/user', require('./routes/user'));

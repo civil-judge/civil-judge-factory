@@ -9,6 +9,7 @@ require('dotenv').config()
 var app = require('../app');
 var debug = require('debug')('civil-judge-backend:server');
 var http = require('http');
+const { info } = require('console');
 
 /**
  * Get port from environment and store in Express.
@@ -88,5 +89,5 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+  info('Listening on ' + bind);
 }

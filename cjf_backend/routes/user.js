@@ -36,6 +36,9 @@ router.post("/getPrevSpentTime", (req, res) => {
 router.post("/insertLearningTime", (req, res) => {
   try {
     var { learningTime, userId, pageName } = req.body;
+    if ($userId ==null){
+      return;
+    }
     let q = `
     SELECT created_on FROM learning_time WHERE userid = ${userId} AND page_name = '${pageName}'
     `;

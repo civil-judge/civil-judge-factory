@@ -1,0 +1,38 @@
+
+#qa-list{
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.cell{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    color:black;
+    background-color: white;
+    /* margin: 10px; */
+    font-size: '13px';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.cell:hover{
+    background-color: #2A5884;
+    color: aliceblue;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+}
+.attempted{
+    background-color: #08a06e;
+    color: white;
+    border: none;
+}
+.marked{
+    background-color: yellow;
+    color: black;
+}
+/* .selected{
+    
+} */
